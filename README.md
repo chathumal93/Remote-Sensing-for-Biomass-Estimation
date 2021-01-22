@@ -1,4 +1,4 @@
-# Biomass-Estimation-SAR-LiDAR
+# Remote-Senting-for-Biomass-Estimation
 This repository includes biomass estimation workflows using remote sensing data and capacity building materials.
 
 #Introduction
