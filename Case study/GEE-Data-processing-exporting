@@ -1,0 +1,105 @@
+//Region of interest
+var PointOfInterest = ee.Geometry.Point(80.665, 28.725);
+Map.addLayer(PointOfInterest)
+Map.addLayer(table,{},'nepal', false)
+
+//Selecting the best (less cloud cover) image
+var start = ee.Date('2010-05-01');
+var finish = ee.Date('2010-11-01');
+var nepal = ee.ImageCollection('LANDSAT/LT05/C01/T1_SR')
+.filterBounds(PointOfInterest).filterDate(start,finish).sort('CLOUD_COVER', false);
+var count = nepal.size();
+print('no of images', count);
+
+var best =ee.Image(nepal.sort('CLOUD_COVER').first());
+print('least cloud image', best);
+var visParams = {
+  bands: ['B3', 'B2', 'B1'],
+  min: 0,
+  max: 3000,
+  gamma: 1.4,
+};
+Map.setCenter(80.665, 28.725);
+Map.addLayer(best,visParams);
+
+// Load a landsat image and the band variables
+var landsat = ee.Image('LANDSAT/LT05/C01/T1_SR/LT05_144040_20101014').select(['B1', 'B2', 'B3', 'B4', 'B5', 'B7']);
+var NIR = landsat.select(['B4']);
+var B   = landsat.select(['B1']);
+var G   = landsat.select(['B2']);
+var R   = landsat.select(['B3']);
+var S1  = landsat.select(['B5']);
+var S2  = landsat.select(['B7']);
+
+//NDVI
+var NDVI = landsat.normalizedDifference(['B4','B3']);
+
+//SAV1 soil adjusted
+var SAVI = landsat.expression(
+   '(a-b)*1.5/(a+b+0.5)',{
+    'a': NIR  ,
+    'b' :R ,
+  });
+
+//NRI nitrogen reflectance index
+var NRI = landsat.expression(
+   '(a-b)/(a+b)',{
+    'a': G  ,
+    'b' :R ,
+  });
+
+//RVI ratio vegetation
+var RVI = landsat.expression(
+   'a/b',{
+    'a': NIR  ,
+    'b' :R ,
+  });
+//EVI enhansed 
+var EVI = landsat.expression(
+   '(a-b)*2.5/(1+a+6*b-7.5*c)',{
+    'a': NIR  ,
+    'b' :R ,
+    'c' :B
+  });
+
+Map.addLayer(landsat,visParams);
+
+Export.image.toDrive({
+  image: NDVI.clip(roi),
+  description: 'NDVI',
+ fileFormat: 'GeoTIFF',
+  maxPixels:  12895239290 ,
+  scale: 30,
+  });
+
+Export.image.toDrive({
+  image: SAVI.clip(roi),
+  description: 'SAVI',
+ fileFormat: 'GeoTIFF',
+  maxPixels:  12895239290 ,
+  scale: 30,
+  });
+
+Export.image.toDrive({
+  image: NRI.clip(roi),
+  description: 'NRI',
+ fileFormat: 'GeoTIFF',
+  maxPixels:  12895239290 ,
+  scale: 30,
+  });
+
+Export.image.toDrive({
+  image: RVI.clip(roi),
+  description: 'RVI',
+ fileFormat: 'GeoTIFF',
+  maxPixels:  12895239290 ,
+  scale: 30,
+  });
+
+Export.image.toDrive({
+  image: EVI.clip(roi),
+  description: 'EVI',
+ fileFormat: 'GeoTIFF',
+  maxPixels:  12895239290 ,
+  scale: 30,
+  });
