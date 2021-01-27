@@ -15,7 +15,7 @@ From the case study folder all the scripts used in the study can be accessed.
 
 Study Area ::
 
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Study%20Area.jpg" width="400" height="400" />
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Study%20Area.jpg" width="700" height="400" />
 
 Methodology ::
 
@@ -27,7 +27,7 @@ Variables ::
 
 Outputs of the study ::
 
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Optical%20Model%20Result.jpg" width="400" height="400" />
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Optical%20Model%20Result.jpg" width="700" height="400" />
 
 2) Training on biomass estimation using remote sensing data
 
