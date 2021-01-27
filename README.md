@@ -20,6 +20,9 @@ Methodology Adopted
 
 2) Training on biomass estimation using remote sensing data
 
-From the training folder all the script used for the training can be accessed.
+From the training folder all the script used for the training can be accessed. Biomass Estimation Practical Sessions.pdf will guide the practical session step by step including
+* ALOS-2 data pre-processing
+* Biomass estmation from LiDAR Data
+* Biomass estmation from SAR Data
 
 
