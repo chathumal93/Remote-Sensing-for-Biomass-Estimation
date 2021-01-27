@@ -19,16 +19,11 @@ Study Area ::
 
 Methodology ::
 
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Methodology.png" width="400" height="400" />
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Methodology.png" width="500" height="600" />
 
-Variables ::
-
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Variables.png" width="400" height="400" />
-
-Outputs of the study ::
-
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Optical%20Model%20Result.jpg" width="700" height="400" />
 
 2) Training on biomass estimation using remote sensing data
+
+From the training folder all the script used for the training can be accessed.
 
 
