@@ -14,16 +14,20 @@ Link for the case study : https://www.researchgate.net/publication/339139739_Est
 From the case study folder all the scripts used in the study can be accessed.
 
 Study Area ::
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/master/Images/Study Area.jpg" width="400" height="400" />
+
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Study%20Area.jpg" width="400" height="400" />
 
 Methodology ::
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/master/Images/Methodology.png" width="400" height="400" />
+
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Methodology.png" width="400" height="400" />
 
 Variables ::
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/master/Images/Variables.png" width="400" height="400" />
+
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Variables.png" width="400" height="400" />
 
 Outputs of the study ::
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/master/Images/Optical Model Result.jpg" width="400" height="400" />
+
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Optical%20Model%20Result.jpg" width="400" height="400" />
 
 2) Training on biomass estimation using remote sensing data
 
