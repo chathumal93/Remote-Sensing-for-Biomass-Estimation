@@ -13,13 +13,9 @@ Link for the case study : https://www.researchgate.net/publication/339139739_Est
 
 From the case study folder all the scripts used in the study can be accessed.
 
-Study Area ::
+Methodology Adopted
 
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Study%20Area.jpg" width="700" height="400" />
-
-Methodology ::
-
-<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Methodology.png" width="500" height="600" />
+<img src="https://github.com/chathumal93/Remote-Sensing-for-Biomass-Estimation/blob/main/Images/Methodology.png" width="600" height="600" />
 
 
 2) Training on biomass estimation using remote sensing data
