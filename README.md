@@ -1,5 +1,5 @@
 # Remote-Senting-for-Biomass-Estimation
-This repository include work related to a case study on biomass estimation in Nepal and capacity building materials on Biomass Estimation using Remote Sensing data.
+This repository includes the work related to a case study on biomass estimation in Nepal and capacity building materials on Biomass Estimation using Remote Sensing data.
 
 # Content
 
